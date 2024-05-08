@@ -42,6 +42,7 @@
     {"id":{"name":"Rock","path":"objects/Rock/Rock.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"import_obj","path":"scripts/import_obj/import_obj.yy",},},
+    {"id":{"name":"wrap","path":"scripts/wrap/wrap.yy",},},
     {"id":{"name":"vertex_add_point","path":"scripts/vertex_add_point/vertex_add_point.yy",},},
     {"id":{"name":"grass_03","path":"sprites/grass_03/grass_03.yy",},},
     {"id":{"name":"rock1","path":"sprites/rock1/rock1.yy",},},
