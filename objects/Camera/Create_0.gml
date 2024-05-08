@@ -14,11 +14,59 @@ vertex_begin(vbuffer, vertexFormat)
 
 var x1 = 100
 var y1 = 100
-var x2 = room_width
-var y2 = room_height
+var x2 = 200
+var y2 = 200
 
 vertex_add_point(vbuffer, x1, y1, 20, 0, 0, 1, 0, 0, c_red, 1)
 vertex_add_point(vbuffer, x2, y1, 20, 0, 0, 1, 0, 0, c_blue, 1)
 vertex_add_point(vbuffer, x2, y2, 20, 0, 0, 1, 0, 0, c_green, 1)
 
+vertex_add_point(vbuffer, x1, y1, 20, 0, 0, 1, 0, 0, c_red, 1)
+vertex_add_point(vbuffer, x1, y2, 20, 0, 0, 1, 0, 0, c_blue, 1)
+vertex_add_point(vbuffer, x2, x2, 20, 0, 0, 1, 0, 0, c_green, 1)
+
+var s = 64
+for (var i = 0; i < room_width; i += s) {
+	for (var j = 0; j < room_height; j += s) {
+		if ((i % (s*2) == 0 && j % (s*2) == 0) || (i % (s*2) > 0 && j % (s*2) > 0)) {
+			var color = c_aqua
+		} else {
+			var color = c_white
+		}
+		
+		vertex_add_point(vbuffer, i,     j,     1,    0, 0, 1,    0, 0,    color, 1)
+		vertex_add_point(vbuffer, i + s, j,     1,    0, 0, 1,    1, 0,    color, 1)
+		vertex_add_point(vbuffer, i + s, j + s, 1,    0, 0, 1,    1, 1,    color, 1)
+		
+		vertex_add_point(vbuffer, i + s, j + s, 1,    0, 0, 1,    1, 1,    color, 1)
+		vertex_add_point(vbuffer, i,     j + s, 1,    0, 0, 1,    0, 1,    color, 1)
+		vertex_add_point(vbuffer, i,     j,     1,    0, 0, 1,    0, 0,    color, 1)
+	}
+}
+
 vertex_end(vbuffer)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

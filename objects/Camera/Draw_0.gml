@@ -3,4 +3,4 @@ camera_set_view_mat(camera, matrix_build_lookat(0, 0, 100, room_width, room_heig
 camera_set_proj_mat(camera, matrix_build_projection_perspective_fov(60, 4/3, 1, 320000))
 camera_apply(camera)
 
-vertex_submit(vbuffer, pr_trianglelist, -1)
+vertex_submit(vbuffer, pr_trianglelist, sprite_get_texture(grass_03, 0))
