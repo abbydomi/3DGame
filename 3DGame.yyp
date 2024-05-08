@@ -34,7 +34,10 @@
   },
   "name":"3DGame",
   "resources":[
+    {"id":{"name":"Camera","path":"objects/Camera/Camera.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"grass_03","path":"sprites/grass_03/grass_03.yy",},},
+    {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
