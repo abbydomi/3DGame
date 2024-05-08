@@ -21,5 +21,6 @@
     {"name":"Rock","order":1,"path":"objects/Rock/Rock.yy",},
     {"name":"import_obj","order":1,"path":"scripts/import_obj/import_obj.yy",},
     {"name":"rock1","order":1,"path":"sprites/rock1/rock1.yy",},
+    {"name":"witch","order":2,"path":"sprites/witch/witch.yy",},
   ],
 }

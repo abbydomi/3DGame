@@ -30,18 +30,18 @@ var s = 64
 for (var i = 0; i < room_width; i += s) {
 	for (var j = 0; j < room_height; j += s) {
 		if ((i % (s*2) == 0 && j % (s*2) == 0) || (i % (s*2) > 0 && j % (s*2) > 0)) {
-			var color = c_aqua
+			var color = c_white //c_aqua
 		} else {
 			var color = c_white
 		}
 		
-		vertex_add_point(vbuffer, i,     j,     1,    0, 0, 1,    0, 0,    color, 1)
-		vertex_add_point(vbuffer, i + s, j,     1,    0, 0, 1,    1, 0,    color, 1)
-		vertex_add_point(vbuffer, i + s, j + s, 1,    0, 0, 1,    1, 1,    color, 1)
+		vertex_add_point(vbuffer, i,     j,     0,    0, 0, 1,    0, 0,    color, 1)
+		vertex_add_point(vbuffer, i + s, j,     0,    0, 0, 1,    1, 0,    color, 1)
+		vertex_add_point(vbuffer, i + s, j + s, 0,    0, 0, 1,    1, 1,    color, 1)
 		
-		vertex_add_point(vbuffer, i + s, j + s, 1,    0, 0, 1,    1, 1,    color, 1)
-		vertex_add_point(vbuffer, i,     j + s, 1,    0, 0, 1,    0, 1,    color, 1)
-		vertex_add_point(vbuffer, i,     j,     1,    0, 0, 1,    0, 0,    color, 1)
+		vertex_add_point(vbuffer, i + s, j + s, 0,    0, 0, 1,    1, 1,    color, 1)
+		vertex_add_point(vbuffer, i,     j + s, 0,    0, 0, 1,    0, 1,    color, 1)
+		vertex_add_point(vbuffer, i,     j,     0,    0, 0, 1,    0, 0,    color, 1)
 	}
 }
 
