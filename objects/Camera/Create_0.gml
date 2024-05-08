@@ -16,7 +16,7 @@ var x1 = 100
 var y1 = 100
 var x2 = 200
 var y2 = 200
-
+/*
 vertex_add_point(vbuffer, x1, y1, 20, 0, 0, 1, 0, 0, c_red, 1)
 vertex_add_point(vbuffer, x2, y1, 20, 0, 0, 1, 0, 0, c_blue, 1)
 vertex_add_point(vbuffer, x2, y2, 20, 0, 0, 1, 0, 0, c_green, 1)
@@ -24,6 +24,7 @@ vertex_add_point(vbuffer, x2, y2, 20, 0, 0, 1, 0, 0, c_green, 1)
 vertex_add_point(vbuffer, x1, y1, 20, 0, 0, 1, 0, 0, c_red, 1)
 vertex_add_point(vbuffer, x1, y2, 20, 0, 0, 1, 0, 0, c_blue, 1)
 vertex_add_point(vbuffer, x2, x2, 20, 0, 0, 1, 0, 0, c_green, 1)
+*/
 
 var s = 64
 for (var i = 0; i < room_width; i += s) {
@@ -44,13 +45,12 @@ for (var i = 0; i < room_width; i += s) {
 	}
 }
 
+
+
+
 vertex_end(vbuffer)
 
-
-
-
-
-
+rock = import_obj("rock_1.obj", vertexFormat)
 
 
 
