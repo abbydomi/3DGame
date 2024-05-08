@@ -5,8 +5,3 @@ camera_apply(camera)
 
 vertex_submit(vbuffer, pr_trianglelist, sprite_get_texture(grass_03, 0))
 
-matrix_set(matrix_world, matrix_build(0, 0, 0, 0, 0, 0, 32, 32, 32))
-
-vertex_submit(rock, pr_trianglelist, sprite_get_texture(rock1, 0))
-
-matrix_set(matrix_world, matrix_build_identity())

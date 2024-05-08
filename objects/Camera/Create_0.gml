@@ -49,24 +49,3 @@ for (var i = 0; i < room_width; i += s) {
 
 
 vertex_end(vbuffer)
-
-rock = import_obj("rock_1.obj", vertexFormat)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

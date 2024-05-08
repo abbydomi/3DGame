@@ -37,6 +37,7 @@
   "name":"3DGame",
   "resources":[
     {"id":{"name":"Camera","path":"objects/Camera/Camera.yy",},},
+    {"id":{"name":"Rock","path":"objects/Rock/Rock.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"import_obj","path":"scripts/import_obj/import_obj.yy",},},
     {"id":{"name":"vertex_add_point","path":"scripts/vertex_add_point/vertex_add_point.yy",},},
