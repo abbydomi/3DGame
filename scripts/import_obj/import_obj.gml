@@ -46,41 +46,108 @@ function import_obj(filename, vertex_format) {
 				})
 				break
 			case "f":
-				var v1 = tokens[1]
-				var v2 = tokens[2]
-				var v3 = tokens[3]
+				for (var j = 3; j < array_length(tokens); j++) {
+					var v1 = tokens[1]
+					var v2 = tokens[j -1]
+					var v3 = tokens[j]
 				
-				var v1_tokens = string_split(v1, "/")
-				var v2_tokens = string_split(v2, "/")
-				var v3_tokens = string_split(v3, "/")
+					var v1_tokens = string_split(v1, "/")
+					var v2_tokens = string_split(v2, "/")
+					var v3_tokens = string_split(v3, "/")
+					
+					switch(array_length(v1_tokens)) {
+						case 1:
+							var v1_position = positions[real(v1_tokens[0]) - 1]
+							var v1_texcoord = { x: 0, y: 0 }
+							var v1_normal   = { x: 0, y: 0, z: 0 }
+							break
+						case 2:
+							var v1_position = positions[real(v1_tokens[0]) - 1]
+							var v1_texcoord = texcoords[real(v1_tokens[1]) - 1]
+							var v1_normal   = { x: 0, y: 0, z: 0 }
+							break
+						case 3:
+							var v1_position = positions[real(v1_tokens[0]) - 1]
+							if v1_tokens[1] == "" {
+								var v1_texcoord = { x: 0, y: 0 }
+							} else {
+								var v1_texcoord = texcoords[real(v1_tokens[1]) - 1]
+							}
+							var v1_normal   = normals[real(v1_tokens[2]) - 1]
+							break
+					}
+					
+					switch(array_length(v2_tokens)) {
+						case 1:
+							var v2_position = positions[real(v2_tokens[0]) - 1]
+							var v2_texcoord = { x: 0, y: 0 }
+							var v2_normal   = { x: 0, y: 0, z: 0 }
+							break
+						case 2:
+							var v2_position = positions[real(v2_tokens[0]) - 1]
+							var v2_texcoord = texcoords[real(v2_tokens[1]) - 1]
+							var v2_normal   = { x: 0, y: 0, z: 0 }
+							break
+						case 3:
+							var v2_position = positions[real(v2_tokens[0]) - 1]
+							if v2_tokens[1] == "" {
+								var v2_texcoord = { x: 0, y: 0 }
+							} else {
+								var v2_texcoord = texcoords[real(v2_tokens[1]) - 1]
+							}
+							var v2_normal   = normals[real(v2_tokens[2]) - 1]
+							break
+					}
+					
+					switch(array_length(v3_tokens)) {
+						case 1:
+							var v3_position = positions[real(v3_tokens[0]) - 1]
+							var v3_texcoord = { x: 0, y: 0 }
+							var v3_normal   = { x: 0, y: 0, z: 0 }
+							break
+						case 2:
+							var v3_position = positions[real(v3_tokens[0]) - 1]
+							var v3_texcoord = texcoords[real(v3_tokens[1]) - 1]
+							var v3_normal   = { x: 0, y: 0, z: 0 }
+							break
+						case 3:
+							var v3_position = positions[real(v3_tokens[0]) - 1]
+							if v3_tokens[1] == "" {
+								var v3_texcoord = { x: 0, y: 0 }
+							} else {
+								var v3_texcoord = texcoords[real(v3_tokens[1]) - 1]
+							}
+							var v3_normal   = normals[real(v3_tokens[2]) - 1]
+							break
+					}
+					
+					var v1_position = positions[real(v1_tokens[0]) - 1]
+					var v1_texcoord = texcoords[real(v1_tokens[1]) - 1]
+					var v1_normal   = normals[real(v1_tokens[2]) - 1]
+					var v2_position = positions[real(v2_tokens[0]) - 1]
+					var v2_texcoord = texcoords[real(v2_tokens[1]) - 1]
+					var v2_normal   = normals[real(v2_tokens[2]) - 1]
+					var v3_position = positions[real(v3_tokens[0]) - 1]
+					var v3_texcoord = texcoords[real(v3_tokens[1]) -1]
+					var v3_normal   = normals[real(v3_tokens[2]) -1]
 				
-				var v1_position = positions[real(v1_tokens[0]) - 1]
-				var v1_texcoord = texcoords[real(v1_tokens[1]) - 1]
-				var v1_normal   = normals[real(v1_tokens[2]) - 1]
-				var v2_position = positions[real(v2_tokens[0]) - 1]
-				var v2_texcoord = texcoords[real(v2_tokens[1]) - 1]
-				var v2_normal   = normals[real(v2_tokens[2]) - 1]
-				var v3_position = positions[real(v3_tokens[0]) - 1]
-				var v3_texcoord = texcoords[real(v3_tokens[1]) -1]
-				var v3_normal   = normals[real(v3_tokens[2]) -1]
 				
+					vertex_position_3d(vertexBuffer, v1_position.x, v1_position.y, v1_position.z)
+					vertex_normal(vertexBuffer, v1_normal.x, v1_normal.y, v1_normal.z)
+					vertex_texcoord(vertexBuffer, v1_texcoord.x, v1_texcoord.y)
+					vertex_color(vertexBuffer, c_white, 1)
 				
-				vertex_position_3d(vertexBuffer, v1_position.x, v1_position.y, v1_position.z)
-				vertex_normal(vertexBuffer, v1_normal.x, v1_normal.y, v1_normal.z)
-				vertex_texcoord(vertexBuffer, v1_texcoord.x, v1_texcoord.y)
-				vertex_color(vertexBuffer, c_white, 1)
+					vertex_position_3d(vertexBuffer, v2_position.x, v2_position.y, v2_position.z)
+					vertex_normal(vertexBuffer, v2_normal.x, v2_normal.y, v2_normal.z)
+					vertex_texcoord(vertexBuffer, v2_texcoord.x, v2_texcoord.y)
+					vertex_color(vertexBuffer, c_white, 1)
 				
-				vertex_position_3d(vertexBuffer, v2_position.x, v2_position.y, v2_position.z)
-				vertex_normal(vertexBuffer, v2_normal.x, v2_normal.y, v2_normal.z)
-				vertex_texcoord(vertexBuffer, v2_texcoord.x, v2_texcoord.y)
-				vertex_color(vertexBuffer, c_white, 1)
-				
-				vertex_position_3d(vertexBuffer, v3_position.x, v3_position.y, v3_position.z)
-				vertex_normal(vertexBuffer, v3_normal.x, v3_normal.y, v3_normal.z)
-				vertex_texcoord(vertexBuffer, v3_texcoord.x, v3_texcoord.y)
-				vertex_color(vertexBuffer, c_white, 1)
-				
-				break
+					vertex_position_3d(vertexBuffer, v3_position.x, v3_position.y, v3_position.z)
+					vertex_normal(vertexBuffer, v3_normal.x, v3_normal.y, v3_normal.z)
+					vertex_texcoord(vertexBuffer, v3_texcoord.x, v3_texcoord.y)
+					vertex_color(vertexBuffer, c_white, 1)
+				}
+			break
 		}
 	}
 	
