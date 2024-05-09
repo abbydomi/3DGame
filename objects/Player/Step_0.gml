@@ -6,7 +6,8 @@ look_pitch = clamp(look_pitch, 10, 90)
 look_dir = wrap(look_dir, 0, 360)
 
 window_mouse_set(window_get_width() / 2, window_get_height() / 2) //Mouse locking
-window_set_cursor(cr_none) 
+window_set_cursor(cr_none)
+
 
 var moveSpeed = 2
 

@@ -45,7 +45,7 @@ for (var i = 0; i < room_width; i += s) {
 	}
 }
 
-
-
+skyboxRot = 0
+skybox = import_obj("skybox1.obj", vertexFormat)
 
 vertex_end(vbuffer)
