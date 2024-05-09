@@ -43,7 +43,3 @@ if zRot > 360 {
 
 
 zRot = wrap(zRot, 0, 360)
-
-// x = lerp(x,nearestHook.x,0.4)
-
-show_debug_message(look_dir)
