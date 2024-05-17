@@ -1,5 +1,6 @@
 {
   "FolderOrderSettings":[
+    {"name":"DmrVBM","order":15,"path":"folders/DmrVBM.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
@@ -12,6 +13,8 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"drmvbmtest","order":3,"path":"objects/drmvbmtest/drmvbmtest.yy",},
+    {"name":"drmvbmtest2","order":4,"path":"objects/drmvbmtest2/drmvbmtest2.yy",},
     {"name":"Player","order":2,"path":"objects/Player/Player.yy",},
     {"name":"Rock","order":1,"path":"objects/Rock/Rock.yy",},
     {"name":"import_obj","order":1,"path":"scripts/import_obj/import_obj.yy",},

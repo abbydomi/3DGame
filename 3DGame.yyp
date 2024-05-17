@@ -10,6 +10,7 @@
   },
   "defaultScriptType":1,
   "Folders":[
+    {"$GMFolder":"","%Name":"DmrVBM","folderPath":"folders/DmrVBM.yy","name":"DmrVBM","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -24,6 +25,8 @@
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"rock_1.obj","CopyToMask":-1,"filePath":"datafiles","name":"rock_1.obj","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"skybox1.obj","CopyToMask":-1,"filePath":"datafiles","name":"skybox1.obj","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"treat.vbm","CopyToMask":-1,"filePath":"datafiles","name":"treat.vbm","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"treat2","CopyToMask":-1,"filePath":"datafiles","name":"treat2","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"witch.obj","CopyToMask":-1,"filePath":"datafiles","name":"witch.obj","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
@@ -34,12 +37,16 @@
   "name":"3DGame",
   "resources":[
     {"id":{"name":"Camera","path":"objects/Camera/Camera.yy",},},
+    {"id":{"name":"drmvbmtest","path":"objects/drmvbmtest/drmvbmtest.yy",},},
+    {"id":{"name":"drmvbmtest2","path":"objects/drmvbmtest2/drmvbmtest2.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
     {"id":{"name":"Rock","path":"objects/Rock/Rock.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"import_obj","path":"scripts/import_obj/import_obj.yy",},},
+    {"id":{"name":"scr_dmrvbm","path":"scripts/scr_dmrvbm/scr_dmrvbm.yy",},},
     {"id":{"name":"vertex_add_point","path":"scripts/vertex_add_point/vertex_add_point.yy",},},
     {"id":{"name":"wrap","path":"scripts/wrap/wrap.yy",},},
+    {"id":{"name":"animshader","path":"shaders/animshader/animshader.yy",},},
     {"id":{"name":"grass_03","path":"sprites/grass_03/grass_03.yy",},},
     {"id":{"name":"rock1","path":"sprites/rock1/rock1.yy",},},
     {"id":{"name":"skybox1","path":"sprites/skybox1/skybox1.yy",},},
