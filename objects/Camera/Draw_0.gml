@@ -10,8 +10,11 @@ var xfrom = xto + dcos(Player.look_dir) * camDistance
 var yfrom = yto - dsin(Player.look_dir) * camDistance
 var zfrom = zto + dsin(Player.look_pitch) * camDistance
 
-camera_set_view_mat(camera, matrix_build_lookat(xfrom, yfrom, zfrom, xto, yto, zto, 0, 0, -1))
-camera_set_proj_mat(camera, matrix_build_projection_perspective_fov(60, 1 / 1, 1, 32000))
+viewMat = matrix_build_lookat(xfrom, yfrom, zfrom, xto, yto, zto, 0, 0, -1)
+projMat =  matrix_build_projection_perspective_fov(60, 1 / 1, 1, 32000)
+
+camera_set_view_mat(camera, viewMat)
+camera_set_proj_mat(camera, projMat)
 camera_apply(camera)
 
 

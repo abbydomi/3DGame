@@ -12,11 +12,14 @@ vertexFormat = vertex_format_end()
 vbuffer = vertex_create_buffer()
 vertex_begin(vbuffer, vertexFormat)
 
+viewMat = undefined
+projMat = undefined
+
+/*
 var x1 = 100
 var y1 = 100
 var x2 = 200
 var y2 = 200
-/*
 vertex_add_point(vbuffer, x1, y1, 20, 0, 0, 1, 0, 0, c_red, 1)
 vertex_add_point(vbuffer, x2, y1, 20, 0, 0, 1, 0, 0, c_blue, 1)
 vertex_add_point(vbuffer, x2, y2, 20, 0, 0, 1, 0, 0, c_green, 1)

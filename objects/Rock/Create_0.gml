@@ -10,3 +10,4 @@ rock = import_obj("rock_1.obj", vertexFormat)
 xrot = 0
 yrot = 0
 zrot = 0
+z = 10
