@@ -1,0 +1,58 @@
+Nodes:
+======
+40: CharacterArmature
+    41: Headband:
+        * Mesh 0 [V,N,UV,T,B,]
+
+    42: Panda:
+        * Mesh 0 [V,N,UV,T,B,]
+
+    43: CharacterArmature
+        44: Root
+            0: Foot.L [bone]
+            1: Body [bone]
+                2: Hips [bone]
+                    4: Abdomen [bone]
+                        5: Torso [bone]
+                            6: Neck [bone]
+                                3: Head [bone]
+                            7: Shoulder.L [bone]
+                                8: UpperArm.L [bone]
+                                    9: LowerArm.L [bone]
+                                        10: Pinky1.L [bone]
+                                            11: Pinky2.L [bone]
+                                                12: Pinky3.L [bone]
+                                        13: Middle1.L [bone]
+                                            14: Middle2.L [bone]
+                                                15: Middle3.L [bone]
+                                        16: Index1.L [bone]
+                                            17: Index2.L [bone]
+                                                18: Index3.L [bone]
+                                        19: Thumb1.L [bone]
+                                            20: Thumb2.L [bone]
+                            21: Shoulder.R [bone]
+                                22: UpperArm.R [bone]
+                                    23: LowerArm.R [bone]
+                                        24: Pinky1.R [bone]
+                                            25: Pinky2.R [bone]
+                                                26: Pinky3.R [bone]
+                                        27: Middle1.R [bone]
+                                            28: Middle2.R [bone]
+                                                29: Middle3.R [bone]
+                                        30: Index1.R [bone]
+                                            31: Index2.R [bone]
+                                                32: Index3.R [bone]
+                                        33: Thumb1.R [bone]
+                                            34: Thumb2.R [bone]
+                35: UpperLeg.L [bone]
+                    36: LowerLeg.L [bone]
+                37: UpperLeg.R [bone]
+                    38: LowerLeg.R [bone]
+            45: PoleTarget.L
+            39: Foot.R [bone]
+            46: PoleTarget.R
+
+Materials:
+==========
+0: Atlas
+
